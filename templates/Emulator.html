@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href='/static/Game.css' />
+<html>
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico" type="image/x-icon">
+  <title>Home | Schoology</title>
+  
+  <link href="/static/text.css" rel="stylesheet" type="text/css" />
+  <link href="/static/text.css" rel="stylesheet" type="text/css" />
+    <script src="static/Emulator.js"></script>
+  </head>
+
+
+
+
+<body>
+  
+    <div class="topnav">
+      <a  href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/">Home</a>
+      <a href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/game">Games</a>
+      <a class="active" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/emulator">Emulators</a>
+      <a href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/gameroom">Game Room</a>
+      <a href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/about">About</a>
+    </div>
+  
+    <h1 style="text-align:center;" id="top">Emulators</h1>
+
+<div class="input">
+    URL for emergency button: <input id="urlT" placeholder="Type URL, include https://www."> 
+  
+    <button onclick="retrieveURL()">Submit URL</button>
+  </div>
+
+
+  <div class="list">
+    <table id="customers">
+      <tr id="gamelist">
+        <th id="top">Emulator List</th>
+      </tr>
+      <tr>
+        <td><a href="#emtitle" onclick="swapM64()">Mario 64</a></td>
+        </tr>
+      <tr>
+        <td><a href="#emtitle" onclick="swapOregon()">The Oregon Trail</a></td>
+      </tr>
+      <tr>
+        <td><a href="#emtitle " onclick="swapSonic()">Sonic</a></td>
+      </tr>
+      <tr>
+        <td><a href="#emtitle" onclick="">In Development</a></td>
+      </tr>
+      <tr>
+        <td>In Development</td>
+      </tr>
+      <tr>
+        <td>In Development</td>
+      </tr>
+      <tr>
+        <td>In Development</td>
+      </tr>
+      <tr>
+        <td>In Development</td>>
+      </tr>
+      <tr>
+        <td>In Development</td>
+      </tr>
+      <tr>
+        <td>In Development</td>
+      </tr>
+      <tr>
+        <td>In Development</td>
+      </tr>
+    </table>
+  </div>
+
+  <h1 id="emtitle"></h1>
+
+  <div class="emulator">
+
+    <iframe id="emulator" src="" name="iFrame Name" scrolling="No" height="" width="" style="border: none;"></iframe>
+
+
+  </div>
+  <button id="myBtn" title="Go to top"><a href="#top" style="text-color: white;">Top</a></button>
+
+  <button class="EBtn" onclick="EBtnURL() title=" Emergency"><a id="url" target="blank" href="">Emergency!</a></button>
+
+
+</body>
+
+</html>
