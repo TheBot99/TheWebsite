@@ -23,7 +23,6 @@ function swapOregon() {
 //Mario 64
 function swapM64() {
   document.getElementById("emulator").src = "https://sm64.jscraft.repl.co/";
-
   document.getElementById("emulator").height = "550px";
   document.getElementById("emulator").width = "900px"; 
  document.getElementById("emtitle").innerHTML = "Mario 64";
@@ -32,8 +31,15 @@ function swapM64() {
 //Sonic
 function swapSonic() {
   document.getElementById("emulator").src = "https://xania.org/miracle/miracle.html";
-
   document.getElementById("emulator").height = "550px";
   document.getElementById("emulator").width = "800px"; 
  document.getElementById("emtitle").innerHTML = "Sonic(set screen size to 175%)";  
+}
+
+//retro bowl
+function swapRB() {
+  document.getElementById("emulator").src = "https://retro-bowl.taigeli.repl.co";
+  document.getElementById("emulator").height = "500px";
+  document.getElementById("emulator").width = "890px"; 
+ document.getElementById("emtitle").innerHTML = "Retro Bowl";
 }
