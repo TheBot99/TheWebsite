@@ -75,6 +75,7 @@ function swapMinecraft(){
 document.getElementById("gametitle").innerHTML = "Minecraft JS";
 }
 
+//snowball.io
 function swapSnowball() {
   document.getElementById("game").src = "https://snowball.taigeli.repl.co";
   document.getElementById("game").height = "700px";
@@ -88,4 +89,12 @@ function swapPolice() {
   document.getElementById("game").height = "700px";
   document.getElementById("game").width = "850px";
 document.getElementById("gametitle").innerHTML = "Police Pursuit 2";
+}
+
+//Let's Surf
+function swapSurf() {
+  document.getElementById("game").src = "https://surf.taigeli.repl.co/";
+  document.getElementById("game").height = "600px";
+  document.getElementById("game").width = "900px";
+document.getElementById("gametitle").innerHTML = "Let's Surf";
 }

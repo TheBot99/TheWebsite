@@ -9,11 +9,13 @@
   <link href="/static/text.css" rel="stylesheet" type="text/css" />
   <script src="static/Game.js"></script>
     <link rel="stylesheet" href='/static/Game.css' />
+  <link rel="stylesheet" href='/static/btn2.css' />
+  <script src="static/btn.js"></script>
 </head>
 
 <body>
 
- <div id="hidden">
+ <div id="hidden" style="visibility: hidden">
   <div class="topnav">
     <a href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/">Home</a>
     <a class="active" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/game">Games</a>
@@ -50,6 +52,9 @@
         <td><a href="#gametitle" onclick="swapSlope()">Slope</a></td>
       </tr>
       <tr>
+        <td><a href="#gametitle" onclick="swapSurf()">Let's Surf</a></td>
+      </tr>
+      <tr>
         <td><a href="#gametitle" onclick="swapRF()">Rolling Forests</a></td>
       </tr>
       <tr>
@@ -57,9 +62,6 @@
       </tr>
       <tr>
         <td><a href="#gametitle" onclick="swapVulcanist()">Vulcanist(fps)</a></td>
-      </tr>
-      <tr>
-        <td>In Development</td>
       </tr>
       <tr>
         <td>In Development</td>
@@ -106,14 +108,35 @@
   <button id="myBtn" title="Go to top"><a href="#top" style="text-color: white;">Top</a></button>
 
   <button class="EBtn" onclick="EBtnURL() title=" Emergency"><a id="url" target="blank" href="">Emergency!</a></button>
-
-
-
-
-
   </div>
 
+<!--btn!-->
+  
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-left: 620px;
+  margin-bottom: 1000px;" id="enter">Enter</button>
 
+<div id="id01" class="modal" style="">
+  
+  <div class="modal-content animate"> 
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    </div>
+
+    <div class="container">
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password (changes every 5 days)" name="psw" required>
+        
+      <button id="karshin" onclick="enterP()" >Enter to play</button>
+
+    </div>
+
+    <form class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </form>
+  </div>
+</div>
 
 
   </body >

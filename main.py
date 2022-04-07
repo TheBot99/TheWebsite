@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 import os
 
 app = Flask(__name__)
@@ -26,6 +26,10 @@ def gameroom():
 @app.route("/about")
 def about():
     return render_template("About.html")
+
+@app.route("/badunblockerstop")
+def unblocker():
+    return redirect("http://Unblocker.thenewone123.repl.co", code=302)
 
 @app.route("/5925106337393963343663419705987675552292498853415480862632764751972231317254813826047454807747214581")
 def abortmissionselfdestruct():
