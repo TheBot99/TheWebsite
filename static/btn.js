@@ -10,6 +10,7 @@ document.getElementById("hidden").style = "visibility: visible";
   if (karshin == true) {
     document.getElementById("id01").style = "visibility: hidden;";
     document.getElementById("enter").style = "visibility: hidden;";
+    document.getElementById("p").style = "visibility: hidden;";
 }
 
   else {

@@ -98,3 +98,11 @@ function swapSurf() {
   document.getElementById("game").width = "900px";
 document.getElementById("gametitle").innerHTML = "Let's Surf";
 }
+
+//Temple Run
+function swapTemple() {
+  document.getElementById("game").src = "https://templerun2.taigeli.repl.co/";
+  document.getElementById("game").height = "600px";
+  document.getElementById("game").width = "900px";
+document.getElementById("gametitle").innerHTML = "Temple Run";
+}
