@@ -34,6 +34,10 @@ def unblocker():
 @app.route("/5925106337393963343663419705987675552292498853415480862632764751972231317254813826047454807747214581")
 def abortmissionselfdestruct():
     os._exit(0)
+  
+@app.route("/contact")
+def contactstupid():
+    return render_template("contact.html")
 
 
 if __name__ == "__main__":

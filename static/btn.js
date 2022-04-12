@@ -2,7 +2,7 @@ function enterP() {
   var psw = 
  document.getElementById("psw").value;
 
-  if (psw == "fatso") {
+  if (psw == "urfat") {
     var karshin = true;
 document.getElementById("hidden").style = "visibility: visible";
   }

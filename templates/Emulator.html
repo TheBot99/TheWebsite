@@ -9,6 +9,8 @@
   <link href="/static/emulator.css" rel="stylesheet" type="text/css" />
   <link href="/static/text.css" rel="stylesheet" type="text/css" />
     <script src="static/Emulator.js"></script>
+      <link rel="stylesheet" href='/static/btn2.css' />
+  <script src="static/btn.js"></script>
   </head>
 
 
@@ -17,11 +19,12 @@
 <body>
   
     <div class="topnav">
-      <a  href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/">Home</a>
-      <a href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/game">Games</a>
-      <a class="active" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/emulator">Emulators</a>
-      <a href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/gameroom">Game Room</a>
-      <a href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/about">About</a>
+      <a id="link1" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/">Home</a>
+      <a id="link2" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/game">Games</a>
+      <a id="link3" class="active" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/emulator">Emulators</a>
+      <a id="link4" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/gameroom">Game Room</a>
+      <a  id="link5" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/about">About</a>
+    <a  id="link6" href="https://435442574473927044049037416144679013569003627114285558903249.thenewone123.repl.co/contact ">Contact Us</a>
     </div>
   
     <h1 style="text-align:center;" id="top">Emulators</h1>
@@ -86,7 +89,35 @@
 
   <button class="EBtn" onclick="EBtnURL() title=" Emergency"><a id="url" target="blank" href="">Emergency!</a></button>
 
+  <!--btn!-->
+  
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-left: 620px;
+  margin-bottom: 1000px;" id="enter">Enter</button>
+  <p id="p" style="text-align: center">If you are over 18 who is trying to log in to our website, then you are violating our <a href="https://Terms-of-Agreement.1974929876995520969298767837.repl.co">terms</a> of agreement.</p>
 
+<div id="id01" class="modal" style="">
+  
+  <div class="modal-content animate"> 
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    </div>
+
+    <div class="container">
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password (changes every 5 days)" name="psw" required>
+        
+      <button id="karshin" onclick="enterP()" >Enter to play</button>
+
+    </div>
+
+    <form class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </form>
+  </div>
+</div>
+  
 </body>
 
 </html>
